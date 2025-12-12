@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Stephen Bates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin: 20px 0 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+        
+        .back-link:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .blog-list {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        
+        .blog-post {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.3s;
+        }
+        
+        .blog-post:last-child {
+            border-bottom: none;
+        }
+        
+        .blog-post:hover {
+            background: #f8f9fa;
+        }
+        
+        .post-date {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .post-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .post-title a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .post-title a:hover {
+            color: #667eea;
+        }
+        
+        .post-excerpt {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .read-more:hover {
+            color: #764ba2;
+            transform: translateX(5px);
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2em; }
+            .post-title { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <div class="header">
+        <h1>Blog</h1>
+        <p>Thoughts on technology, defense, and leadership</p>
+    </div>
+    
+    <div class="container">
+        <div class="blog-list">
+            <article class="blog-post">
+                <div class="post-date">January 9, 2021</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/summary-execution-abc8b93b92fb" target="_blank">Summary Execution</a></h2>
+                <p class="post-excerpt">Siri, define summary execution.</p>
+                <a href="https://batess.medium.com/summary-execution-abc8b93b92fb" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">August 11, 2020</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/meeting-protocols-courtesy-fb69e3097788" target="_blank">Meeting Protocols/Courtesy</a></h2>
+                <p class="post-excerpt">I cannot believe I have to write a fucking Medium post about this.</p>
+                <a href="https://batess.medium.com/meeting-protocols-courtesy-fb69e3097788" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">July 11, 2020</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/sebs-2020-newsletters-19a99b44ebdb" target="_blank">SEB's 2020 Newsletters</a></h2>
+                <p class="post-excerpt">Here's what I'm regularly reading, and listening to these days. I do not watch television news.</p>
+                <a href="https://batess.medium.com/sebs-2020-newsletters-19a99b44ebdb" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">May 25, 2020</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/2020-media-diet-bd42be17c7cd" target="_blank">2020 media diet</a></h2>
+                <p class="post-excerpt">A friend recently asked me for some podcast recommendations with some rather specific criteria.</p>
+                <a href="https://batess.medium.com/2020-media-diet-bd42be17c7cd" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">February 5, 2018</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/2018-subscribed-newspapers-and-periodicals-ef336687b39b" target="_blank">2018 Newspapers, Newsletters, Periodicals, and Podcasts</a></h2>
+                <p class="post-excerpt">What am I reading in 2018, and what am I not? With a finite amount of time, and the effort it takes to become informed, and not...</p>
+                <a href="https://batess.medium.com/2018-subscribed-newspapers-and-periodicals-ef336687b39b" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">November 21, 2017</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/sebs-p2-bean-stew-7f36e297ee25" target="_blank">SEB's P2 bean stew</a></h2>
+                <p class="post-excerpt">A not-so-secret Puerto Rican 16 Bean Soup recipe, compliments of Tahnia Tee. P2 for Puerto Rican and P for Polish.</p>
+                <a href="https://batess.medium.com/sebs-p2-bean-stew-7f36e297ee25" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">August 16, 2017</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/need-global-sim-recommendations-6660d36647ef" target="_blank">Need Global SIM recommendations</a></h2>
+                <p class="post-excerpt">Burner unlocked iPhone 5c:‬</p>
+                <a href="https://batess.medium.com/need-global-sim-recommendations-6660d36647ef" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">August 12, 2017</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/what-podcasts-im-listening-to-b42a2a686ecf" target="_blank">What podcasts I'm listening to..</a></h2>
+                <p class="post-excerpt">I have the world's easiest DC commute through the leafy suburbs of Virginia. Just a few stoplights, 3 turns, and mostly 45 mph the whole...</p>
+                <a href="https://batess.medium.com/what-podcasts-im-listening-to-b42a2a686ecf" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">March 23, 2017</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/faith-in-our-institutions-c30c63b34048" target="_blank">Faith in our Institutions</a></h2>
+                <p class="post-excerpt">I read recently that Americans no longer have faith in their institutions.</p>
+                <a href="https://batess.medium.com/faith-in-our-institutions-c30c63b34048" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-date">November 24, 2016</div>
+                <h2 class="post-title"><a href="https://batess.medium.com/thoughts-on-energy-symposium16-birmingham-7aaf7e3b2773" target="_blank">Thoughts on Energy Symposium16 — Birmingham</a></h2>
+                <p class="post-excerpt">I wanted to share with you some thoughts on the recent Energy Symposium 16, held in Birmingham, AL. Yes, the attendance and turnout were...</p>
+                <a href="https://batess.medium.com/thoughts-on-energy-symposium16-birmingham-7aaf7e3b2773" target="_blank" class="read-more">Read on Medium →</a>
+            </article>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Stephen Bates. All rights reserved.</p>
+    </div>
+</body>
+</html>
