@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Post - Stephen Bates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin: 20px 0 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .post {
+            background: white;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        
+        .post-meta {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .post-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .post-content p {
+            margin-bottom: 20px;
+        }
+        
+        .post-content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px solid #667eea;
+        }
+        
+        .post-content a:hover {
+            opacity: 0.8;
+        }
+        
+        .embed-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .twitter-tweet {
+            margin: 30px auto !important;
+        }
+        
+        iframe {
+            max-width: 100%;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .post { padding: 30px 20px; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+    <a href="../blog.html" class="back-link">← Back to Blog</a>
+    
+    <div class="header">
+        <h1>Sample Post Title</h1>
+    </div>
+    
+    <div class="container">
+        <article class="post">
+            <div class="post-meta">December 12, 2025</div>
+            
+            <div class="post-content">
+                <p>This is a sample blog post. You can write your content here using simple HTML.</p>
+                
+                <p>To embed a tweet, just paste the URL on its own line like this:</p>
+                
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sample tweet will appear here</p></blockquote>
+                
+                <p>YouTube videos work too:</p>
+                
+                <div class="embed-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <p>You can also add regular links like <a href="https://example.com">this</a>.</p>
+            </div>
+        </article>
+    </div>
+    
+    <!-- Twitter embed script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
